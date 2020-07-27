@@ -6,10 +6,9 @@ import { faNode, faAws, faReact, faFontAwesome } from "@fortawesome/free-brands-
 const Footer = () => {
   return (
     <footer>
-
       <div className="footer-content">
-
         <div className="footer-content-left">
+
           <div className="footer-section">
             <h2 className="footer-name" style={{ color: '#00FECA' }}>SECTION</h2>
             <ul className="footer-links">
@@ -19,6 +18,7 @@ const Footer = () => {
               <li className="footer-link"><Link to="/about">About</Link></li>
             </ul>
           </div>
+
           <div className="footer-section">
             <h2 className="footer-name" style={{ color: '#7B61F8' }}>SOCIAL</h2>
             <ul className="footer-links">
@@ -27,8 +27,8 @@ const Footer = () => {
               <li className="footer-link"><a href="https://linkedin.com/in/abrahamjchoi" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
             </ul>
           </div>
-        </div>
 
+        </div>
         <div className="footer-content-right">
           <div className="footer-section">
             <p>Developed with:</p>
@@ -42,7 +42,6 @@ const Footer = () => {
       </div>
 
       <p>Developed by:</p>
-
       <a className="footer-logo" href="/">
         <div className="logo-first">ABE</div>
         <div className="logo-last">CHOI</div>

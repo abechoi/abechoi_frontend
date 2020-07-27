@@ -15,7 +15,6 @@ const Blogs = () => {
 
                 <h1 className="blog-title">{ blog.title }</h1>
                 <p className="blog-date">{ blog.createdAt }</p>
-                <hr/>
 
                 <div>{ blog.content.map(i => {
                   return <p className="blog-content" key={blog.content.indexOf(i)}><br/>{i}<br/></p>;
