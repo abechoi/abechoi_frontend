@@ -310,6 +310,13 @@ footer p{
 }
 
 @media screen and (max-width: 1250px){
+  .blogs-div{
+    padding: 50px;
+  }
+  .bio-pic {
+    max-width: 75%;
+    max-height: 75%;
+}
   .bio-info{
     width: 75%;
   }
@@ -393,7 +400,7 @@ footer p{
   .blogs-div{
     width: 100%;
     padding: 20px;
-    height: 50vh;
+    height: 60vh;
   }
   .title-div{
     display: none;
@@ -491,7 +498,7 @@ footer p{
   }
   /*! Blogs - iPad */
   .blogs-div{
-    height: 60vh;
+    height: 100vh;
   }
   
 }
