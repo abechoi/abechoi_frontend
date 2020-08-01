@@ -1,6 +1,9 @@
 import React from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const AbeChoiApp = ({project}) => {
+
+  const sections = project.sections;
 
   return (
     <section>
@@ -15,18 +18,21 @@ const AbeChoiApp = ({project}) => {
 
         <h1 className="title">{project.title}</h1>
         <p className="date">{project.createdAt}</p>
-
         <h3 className="table-header">Table of Contents</h3>
   
         <ol className="table-of-contents">
-          <li className="app-link"><a href="#section1">Summary</a></li>
-          <li className="app-link"><a href="#section2">Notable Technologies</a></li>
-          <li className="app-link"><a href="#section3">Troubleshooting and Debugging</a></li>
-          <li className="app-link"><a href="#section4">Future Development</a></li>
+
+          {sections.map(section => (
+            <li className="app-link">
+              <Link  to={"/abechoi#section"+(sections.indexOf(section) + 1)}
+              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}>{ section }</Link>
+            </li>
+          ))}
+
         </ol>
 
         <div className="app-section" id="section1">
-          <h3 id="section1">Summary</h3>
+          <h3>Summary</h3>
           <p>I wanted to make a React website to showcase my React apps - and while this website is still on its way to completion, there are still a few things I need to fix up. I currently have over 600 lines of CSS which I intend on reducing, I’m even considering to rewrite a lot of the CSS using a grid display for easier maneuverability for media queries.</p>
         </div>
 
