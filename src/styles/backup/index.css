@@ -17,13 +17,6 @@ section{
   padding: 100px;
   text-align: center;
 }
-.title{
-  margin: 0;
-  font-size: 40px;
-}
-.date{
-  margin: 5px auto;
-}
 /*! Navbar */
 .navbar{
   justify-content: center;
@@ -38,7 +31,6 @@ section{
 
 a{
   text-decoration: none;
-  color: #20232A;
 }
 ul{
   padding: 0;
@@ -48,7 +40,6 @@ ul{
   text-align: center;
   padding-top: 1.5rem;
   width: 10%;
-  margin: 0 auto;
 }
 
 .logo-first{
@@ -243,6 +234,13 @@ footer p{
   height: 100vh;
   margin: 0 auto;
 }
+.blog-title{
+  margin: 0;
+  font-size: 40px;
+}
+.blog-date{
+  margin: 5px auto;
+}
 .blog-content{
   font-size: 1.2rem;
   line-height: 1.7;
@@ -254,108 +252,8 @@ footer p{
   padding: 20px 0 0 6%;
 }
 /*! Projects */
-.projects-section{
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-.projects-grid{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 30px 30px;
-  margin: 0;
-  padding: 25px 100px;
-  height: 100%;
-}
-.project-card{
-  margin: 1px auto;
-  width: 237px;
-  border: 1px solid #ddd;
-  display: block;
-  padding: 15px;
-  color: #20232A;
-  border: 1px #ddd solid;
-  border-radius: 5px;
-  box-shadow: 1px 1px rgb(163, 163, 163);
-}
-.project-card:hover{
-  box-shadow: 1px 1px rgb(68, 68, 68);
-}
-.projects-thumbnail{
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-.projects-title{
-  margin: 15px 0 0 0;
-}
-.projects-card p{
-  margin: 0 0 15px 0;
-}
-/*! Apps */
-.project-details{
-  width: 900px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 25px;
-  border: 1px solid #ddd;
-}
-.project-demo{
-  background: #20232A;
-  border: 5px #00feca solid;
-  height: 100px;
-  margin: 25px auto;
-}
-.project-demo:hover{
-  border: #7B61F8 solid 5px;
-}
-.table-header{
-  margin-top: 50px;;
-}
-.table-of-contents{
-  background: #ddd;
-  border-radius: 5px;
-  padding: 20px 40px;
-  margin-bottom: 50px;
-  width: fit-content;
-}
-.app-link{
-  margin: 20px auto;
-}
-.app-section{
-  border: 1px #ddd solid;
-  line-height: 2;
-  border-radius: 5px;
-  margin: 25px auto;
-  padding: 25px;
-}
-.app-nav-logo{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
 
-.app-logo-first{
-  font-size: 5rem;
-  font-weight: 800;
-  color: #61DAFB;
-  align-self: center;
-}
 
-.app-logo-first:hover{
-  color: #FDF200;
-}
-
-.app-logo-last{
- font-size: 5rem;
- font-weight: 800;
- color: #FF85EA;
- align-self: center;
-}
-.app-logo-last:hover{
- color: #FDF200;
-}
 /*! Docs */
 
 /*! About */
@@ -364,6 +262,7 @@ footer p{
   height: 100%;
   display: flex;
   justify-content: center;
+  
 }
 .bio-div{
   display: block;

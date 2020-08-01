@@ -1,20 +1,16 @@
-import React from "react";
-
-const projects = [];
+import React from 'react';
+import projects from "./data/projects";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-
-  return projects.length ? (
-    <section className="projects-section">
-      <div>
-        { projects.map(project => (
-          <h3>{ project.title }</h3>
+  return (
+    <section>
+      
+      <ul className="projects-grid">
+        { projects.map((project) => (
+          <ProjectCard project={project} key={project.id}/>
         ))}
-      </div>
-    </section>
-  ) : (
-    <section className="empty-section">
-      <h3>Projects are coming soon!</h3>
+      </ul>
     </section>
   );
 }
