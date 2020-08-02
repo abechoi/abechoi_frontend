@@ -7,7 +7,7 @@ import Docs from './components/Docs';
 import About from './components/About';
 import Projects from './components/Projects';
 import projects from "./components/data/projects";
-import AbeChoiApp from "./components/apps/AbeChoiApp";
+import ProjectDetails from "./components/ProjectDetails";
 
 const App = () => {
   return (
@@ -16,12 +16,12 @@ const App = () => {
       <Router>
         <Navbar/>
         <Switch>
-          <Route exact path="/"><About/></Route>
-          <Route path="/blogs"><Blogs/></Route>
-          <Route path="/docs"><Docs/></Route>
-          <Route path="/projects"><Projects/></Route>
+          <Route exact path="/" render={() => <About/>} />
+          <Route path="/blogs" render={() => <Blogs/>} />
+          <Route path="/docs" render={() => <Docs/>} />
+          <Route path="/projects" render={() => <Projects/>} />
           
-          <Route path={projects[0].url} render={(props) => <AbeChoiApp {...props} project={projects[0]} />} />
+          <Route path={projects[0].url} render={(props) => <ProjectDetails {...props} project={projects[0]} />} />
         </Switch>
         <Footer/>
       </Router>

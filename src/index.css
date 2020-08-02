@@ -77,6 +77,7 @@ ul{
   list-style-type: none;
   display: flex;
   margin: 0 100px;
+  width: 40%;
 }
 
 .site-links li{
@@ -141,7 +142,9 @@ ul{
 .social-links{
   list-style-type: none;
   display: flex;
-  padding-top: 5px;
+  padding-top: 20px;
+  width: 20%;
+  margin: 0 auto;
 }
 .social-link{
   padding: 2px;
@@ -276,10 +279,6 @@ footer p{
   color: #20232A;
   border: 1px #ddd solid;
   border-radius: 5px;
-  box-shadow: 1px 1px rgb(163, 163, 163);
-}
-.project-card:hover{
-  box-shadow: 1px 1px rgb(68, 68, 68);
 }
 .projects-thumbnail{
   width: 100%;
@@ -301,14 +300,10 @@ footer p{
   border: 1px solid #ddd;
 }
 .project-demo{
-  background: #20232A;
-  border: 5px #00feca solid;
   height: 100px;
   margin: 25px auto;
 }
-.project-demo:hover{
-  border: #7B61F8 solid 5px;
-}
+
 .table-header{
   margin-top: 50px;;
 }
