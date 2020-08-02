@@ -18,9 +18,15 @@ const ProjectDetails = ({project}) => {
         <div className="project-demo">
           <AbeChoiApp />
         </div>
-
+        
         <h1 className="title">{project.title}</h1>
-        <p className="date">{project.createdAt}</p>
+        <div style={{ display: 'flex', marginTop: 10 }}>
+          <p className="date" style={{ marginTop: 5 }}>{project.createdAt}</p>
+          <a className="github-button" href="https://github.com/abechoi" data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large" aria-label="Follow @abechoi on GitHub">
+            View Repo
+          </a>
+        </div>
+        
         <h3 className="table-header">Table of Contents</h3>
   
         <ol className="table-of-contents">
