@@ -25,8 +25,8 @@ const ProjectDetails = ({project}) => {
   
         <ol className="table-of-contents">
           {sections.map(section => (
-            <li className="app-link">
-              <Link  to={ "/abechoi#section" + (sectionIndex(section)) } key={sectionIndex(section)}
+            <li className="app-link" key={sectionIndex(section)}>
+              <Link  to={ "/abechoi#section" + (sectionIndex(section)) }
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}>{ section.title }</Link>
             </li>
           ))}
