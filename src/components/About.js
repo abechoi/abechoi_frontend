@@ -5,7 +5,7 @@ const About = () => {
     <section className="about-section">
       <div className="bio-div">
         <img className="bio-pic" 
-        src="https://avatars1.githubusercontent.com/u/7634806?s=460&u=6f6f5b9b3070017d34185e9cdf32489498f15d17&v=4" 
+        src="bio-pic.jpeg" 
         alt="https://avatars1.githubusercontent.com/u/7634806?s=460&u=6f6f5b9b3070017d34185e9cdf32489498f15d17&v=4"/>
         <div className="bio-info">
           <p>Abraham Jong-Hae Choi</p>
