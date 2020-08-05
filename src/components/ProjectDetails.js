@@ -21,8 +21,8 @@ const ProjectDetails = ({project}) => {
           <CustomComponent Demo={ project.demo }/>
         </div>
         
-        <h1 className="title">{project.title}</h1>
-        <div style={{ display: 'flex', marginTop: 10 }}>
+        <h1 className="project-title">{project.title}</h1>
+        <div className="project-div" style={{ display: 'flex', marginTop: 10  }}>
           <p className="date" style={{ marginTop: 5 }}>{project.createdAt}</p>
           <a className="github-sm" href="https://github.com/abechoi/abechoi_frontend" target="__blank">
             <FontAwesomeIcon icon={faGithub} size="2x" style={{ width: 16, height: 16 }}/>
