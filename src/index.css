@@ -6,8 +6,7 @@ body {
   background-color: #20232A;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 section{
   background-color: #fff;
@@ -371,7 +370,6 @@ footer p{
 .github-sm-text{
   margin: 2px auto;
 }
-
 @media screen and (max-width: 1250px){
 /*! ----------------------   BLOGS - 1250px and below   ---------------------- */
 /*? ----------------------   BLOGS - 1250px and below   ---------------------- */
@@ -415,8 +413,6 @@ footer p{
 /*? ----------------------   ABOUT - 1024px and below   ---------------------- */
   .about-section{
     padding-bottom: 25px;
-    width: 100vw;
-    height: 100%;
     display: block;    
   }
   .bio-div{
@@ -455,8 +451,8 @@ footer p{
 /*? ----------------------   BLOGS - 1024px and below   ---------------------- */
   .blogs-div{
     width: 100%;
+    height: 100%;
     padding: 20px;
-    height: 60vh;
   }
   .title-div{
     display: none;
@@ -475,8 +471,6 @@ footer p{
   .footer-content-left{
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
     border-right: 0px;
     border-bottom: #FDF200 solid 1px;
   }
@@ -485,37 +479,15 @@ footer p{
     width: auto;
   }
   .footer-content-right{
-    margin: 0 auto;
     display: inline;
-    justify-content: center;
     border-left: 0px;
     border-top: #FDF200 solid 1px;
   }
 /*! ----------------------   ABOUT - 768px and below   ---------------------- */
 /*? ----------------------   ABOUT - 768px and below   ---------------------- */
-  .about-section{
-    padding-bottom: 25px;
-    width: 100vw;
-    height: 100%;
-    display: block;    
-  }
-  .bio-div{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
   .bio-info p{
     width: 75%;
     font-size: 1.2rem;
-  }
-  .about-div{
-    width: 90%;
-    margin-bottom: 0px;
-  }
-/*! ----------------------   BLOGS - 768px and below   ---------------------- */
-/*? ----------------------   BLOGS - 768px and below   ---------------------- */
-  .blogs-div{
-    height: 100%;
   }
 }
 @media screen and (max-width: 480px){
