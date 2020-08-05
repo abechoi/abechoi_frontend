@@ -1,7 +1,8 @@
 import { v4 } from "uuid";
+import AbeChoiApp from '../apps/AbeChoiApp';
 
 const projects = [
-  { id: v4(), title: 'ABECHOI.COM', url: '/abechoi', demo: "AbeChoiApp", createdAt: "July 29, 2020", updatedAt: "July 31, 2020",
+  { id: v4(), title: 'ABECHOI.COM', url: '/abechoi', demo: AbeChoiApp, createdAt: "July 29, 2020", updatedAt: "July 31, 2020",
   thumbnail: "./images/projects-thumbnail-1.png",
   info: "This website was made in React (see flavicon at the tab if you don't believe me!). This site will showcase my future React apps and I will also create and upload documents on solutions that I will need.",
   sections: [
@@ -21,7 +22,7 @@ const projects = [
       title: "Future Development",
       content: "I still have to clean up the CSS and move to a grid display. Then I want to add a backend to retrieve my site data, such as blogs and docs. While all this is happening, I will have to keep developing other projects to fill up the projects page. My next project will probably focus on APIs and GraphQL, I have a bookmarked GraphQL course on Youtube by The Net Ninja with 36 videos so I guess I should get started as soon as possible.",
     }]
-  }
+  },
 ];
 
 export default projects;

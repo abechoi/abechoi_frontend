@@ -1,9 +1,9 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import AppContent from "./AppContent";
-import AbeChoiApp from "./apps/AbeChoiApp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import CustomComponent from './CustomComponent';
 
 const ProjectDetails = ({project}) => {
 
@@ -18,15 +18,15 @@ const ProjectDetails = ({project}) => {
       <div className="project-details">
 
         <div className="project-demo">
-          <AbeChoiApp />
+          <CustomComponent Demo={ project.demo }/>
         </div>
         
         <h1 className="title">{project.title}</h1>
         <div style={{ display: 'flex', marginTop: 10 }}>
           <p className="date" style={{ marginTop: 5 }}>{project.createdAt}</p>
-          <a className="github-md" href="https://github.com/abechoi/abechoi_frontend" target="__blank">
-            <FontAwesomeIcon icon={faGithub} size="2x" style={{ width: 20, height: 20 }}/>
-            <div className="github-md-text"><strong>View Repo</strong></div>
+          <a className="github-sm" href="https://github.com/abechoi/abechoi_frontend" target="__blank">
+            <FontAwesomeIcon icon={faGithub} size="2x" style={{ width: 16, height: 16 }}/>
+            <div className="github-sm-text"><strong>View Repo</strong></div>
           </a>
         </div>
         

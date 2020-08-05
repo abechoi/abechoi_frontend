@@ -5,17 +5,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #20232A;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 section{
   background-color: #fff;
-}
-.empty-section{
-  padding: 100px;
-  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 .title{
   margin: 0;
@@ -24,7 +22,8 @@ section{
 .date{
   margin: 2px 15px 0 0;
 }
-/*! Navbar */
+/*! ----------------------   NAVBAR - 1250px and up   ---------------------- */
+/*? ----------------------   NAVBAR - 1250px and up   ---------------------- */
 .navbar{
   justify-content: center;
   display: flex;
@@ -36,7 +35,6 @@ section{
   color: #fff;
   z-index: 5;
 }
-
 a{
   text-decoration: none;
   color: #20232A;
@@ -51,36 +49,30 @@ ul{
   width: 15%;
   margin: 0 auto;
 }
-
 .logo-first{
   font-size: 1.7rem;
   font-weight: 800;
   color: #61DAFB;
   margin: 0 auto;
 }
-
 .logo-first:hover{
   color: #FDF200;
 }
-
 .logo-last{
  font-size: 1.7rem;
  font-weight: 800;
  color: #FF85EA;
  margin: 0 auto;
 }
-
 .logo-last:hover{
  color: #FDF200;
 }
-
 .site-links{
   list-style-type: none;
   display: flex;
   margin: 0 100px;
   width: 40%;
 }
-
 .site-links li{
   justify-content: center;
   width: 150px;
@@ -88,14 +80,12 @@ ul{
   border-radius: 5px;
   text-align: center;
   font-weight: 550;
-  
 }
 .site-links li a{
   font-size: 1.4rem;
   line-height: 6rem;
   padding: 10px;
 }
-
 .site-links li a.project-link{
   color: white;
 }
@@ -106,7 +96,6 @@ ul{
   color: #FF85EA;
   border-bottom: 5px solid #FF85EA;
 }
-
 .site-links li a.docs-link{
   color: white;
 }
@@ -117,7 +106,6 @@ ul{
   color: #7B61F8;
   border-bottom: 5px solid #7B61F8;
 }
-
 .site-links li a.blogs-link{
   color: white;
 }
@@ -128,7 +116,6 @@ ul{
   color: #61DAFB;
   border-bottom: 5px solid #61DAFB;
 }
-
 .site-links li a.about-link{
   color: white;
 }
@@ -139,7 +126,6 @@ ul{
   color: #FDF200;
   border-bottom: 5px solid #FDF200;
 }
-
 .social-links{
   list-style-type: none;
   display: flex;
@@ -161,8 +147,8 @@ ul{
   color:  #00feca !important;
   background-color: #20232A;
 }
-
-/*! Footer */
+/*! ----------------------   FOOTER - 1250px and up   ---------------------- */
+/*? ----------------------   FOOTER - 1250px and up   ---------------------- */
 footer{
   z-index: 1;
   margin: 0 auto;
@@ -231,12 +217,8 @@ footer p{
   color:  #00feca !important;
   background-color: #20232A;
 }
-/*! Blogs */
-.blogs-section{
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
+/*! ----------------------   BLOGS - 1250px and up   ---------------------- */
+/*? ----------------------   BLOGS - 1250px and up   ---------------------- */
 .blogs-div{
   width: 85%;
   padding: 20px;
@@ -257,7 +239,8 @@ footer p{
   background-color: #F7F7F7;
   padding: 20px 0 0 6%;
 }
-/*! Projects */
+/*! ----------------------   PROJECTS - 1250px and up   ---------------------- */
+/*? ----------------------   PROJECTS - 1250px and up   ---------------------- */
 .projects-section{
   width: 100vw;
   display: flex;
@@ -266,13 +249,12 @@ footer p{
 .projects-grid{
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 30px 30px;
-  margin: 0;
   padding: 25px 100px;
   height: 100%;
+  justify-items: end;
 }
 .project-card{
-  margin: 1px auto;
+  margin: 30px;
   width: 237px;
   border: 1px solid #ddd;
   display: block;
@@ -292,8 +274,8 @@ footer p{
 .projects-card p{
   margin: 0 0 15px 0;
 }
-/*! Apps */
-.project-details{
+/*! ----------------------   APPS - 1250px and up   ---------------------- */
+/*? ----------------------   APPS - 1250px and up   ---------------------- */.project-details{
   width: 900px;
   height: 100%;
   margin: 0 auto;
@@ -304,7 +286,6 @@ footer p{
   height: 100px;
   margin: 25px auto;
 }
-
 .table-header{
   margin-top: 50px;;
 }
@@ -331,18 +312,15 @@ footer p{
   text-align: center;
   margin: auto;
 }
-
 .app-logo-first{
   font-size: 5rem;
   font-weight: 800;
   color: #61DAFB;
   align-self: center;
 }
-
 .app-logo-first:hover{
   color: #FDF200;
 }
-
 .app-logo-last{
  font-size: 5rem;
  font-weight: 800;
@@ -352,9 +330,14 @@ footer p{
 .app-logo-last:hover{
  color: #FDF200;
 }
-/*! Docs */
+/*! ----------------------   DOCS - 1250px and up   ---------------------- */
+/*? ----------------------   DOCS - 1250px and up   ---------------------- */
+.docs-section{
+  padding: 100px 0;
+}
 
-/*! About */
+/*! ----------------------   ABOUT - 1250px and up   ---------------------- */
+/*? ----------------------   ABOUT - 1250px and up   ---------------------- */
 .about-section{
   width: 100vw;
   height: 100%;
@@ -366,7 +349,6 @@ footer p{
   text-align: center;
   width: 30%;
   border-right: 1px #ddd solid;
-  box-shadow: 1px 0 rgb(163, 163, 163);
 }
 .bio-pic{
   margin: 50px auto;
@@ -382,7 +364,6 @@ footer p{
   text-align: left;
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 1px 1px rgb(163, 163, 163);
 }
 .bio-info p{
   margin: 5px auto;
@@ -396,7 +377,6 @@ footer p{
 .about-card{
   width: 80%;
   border: #ddd solid 1px;
-  box-shadow: 1px 1px rgb(163, 163, 163);
   border-radius: 5px;
   margin: 50px auto;
   padding: 30px;
@@ -405,24 +385,8 @@ footer p{
   font-size: 1.2rem;
   line-height: 1.7;
 }
-
-@media screen and (max-width: 1250px){
-  .blogs-div{
-    padding: 50px;
-  }
-  .bio-pic {
-    max-width: 75%;
-    max-height: 75%;
-}
-  .bio-info{
-    width: 75%;
-  }
-  .bio-info p{
-    width: 70%;
-  }
-}
-
-/*! Widgets */
+/*! ----------------------   WIDGETS - 1250px and up   ---------------------- */
+/*? ----------------------   WIDGETS - 1250px and up   ---------------------- */
 .github-sm{
   height: 16px;
   width: 80px;
@@ -432,28 +396,34 @@ footer p{
   border: 1px solid #ddd;
   border-radius: 5px;
   display: flex;
-  padding: 2.5px 6px;
+  padding: 2px 4px;
+  margin-top: 3px;
 }
 .github-sm-text{
   margin: 2px auto;
 }
-.github-md{
-  height: 20px;
-  width: 103px;
-  font-size: 12px;
-  color: #24292e;
-  background: #EEF1F5;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  display: flex;
-  padding: 5px;
-}
-.github-md-text{
-  margin: 2px auto;
+
+@media screen and (max-width: 1250px){
+/*! ----------------------   BLOGS - 1250px and below   ---------------------- */
+/*? ----------------------   BLOGS - 1250px and below   ---------------------- */
+  .blogs-div{
+    padding: 50px;
+  }
+  .bio-pic {
+    max-width: 75%;
+    max-height: 75%;
+  }
+  .bio-info{
+    width: 75%;
+  }
+  .bio-info p{
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 1024px){
-  /*! Navbar - iPad Pro */
+/*! ----------------------   NAVBAR - 1024px and below   ---------------------- */
+/*? ----------------------   NAVBAR - 1024px and below   ---------------------- */
   .navbar{
     display: inline-block;
     position: sticky;
@@ -484,7 +454,8 @@ footer p{
   .social-links{
     display: none;
   }
-  /*! About - iPad Pro */
+/*! ----------------------   ABOUT - 1024px and below   ---------------------- */
+/*? ----------------------   ABOUT - 1024px and below   ---------------------- */
   .about-section{
     padding-bottom: 25px;
     width: 100vw;
@@ -523,7 +494,8 @@ footer p{
     width: 90%;
     margin-bottom: 0px;
   }
-  /*! Blogs - iPad Pro */
+/*! ----------------------   BLOGS - 1024px and below   ---------------------- */
+/*? ----------------------   BLOGS - 1024px and below   ---------------------- */
   .blogs-div{
     width: 100%;
     padding: 20px;
@@ -535,11 +507,10 @@ footer p{
   .blog-card{
     height: 100%;
   }
-
 }
 @media screen and (max-width: 768px){
-
-  /*! Navbar - iPad */
+/*! ----------------------   NAVBAR - 768px and below   ---------------------- */
+/*? ----------------------   NAVBAR - 768px and below   ---------------------- */
   .navbar{
     display: inline-block;
     position: sticky;
@@ -570,7 +541,8 @@ footer p{
   .social-links{
     display: none;
   }
-  /*! Footer - iPad */
+/*! ----------------------   FOOTER - 768px and below   ---------------------- */
+/*? ----------------------   FOOTER - 768px and below   ---------------------- */
   footer{
     z-index: 1;
     margin: 0 auto;
@@ -595,14 +567,14 @@ footer p{
     width: auto;
   }
   .footer-content-right{
-    width: 100%;
     margin: 0 auto;
     display: inline;
     justify-content: center;
     border-left: 0px;
     border-top: #FDF200 solid 1px;
   }
-  /*! About - iPad */
+/*! ----------------------   ABOUT - 768px and below   ---------------------- */
+/*? ----------------------   ABOUT - 768px and below   ---------------------- */
   .about-section{
     padding-bottom: 25px;
     width: 100vw;
@@ -614,7 +586,6 @@ footer p{
     justify-content: center;
     width: 100%;
   }
-
   .bio-info p{
     width: 75%;
     font-size: 1.2rem;
@@ -623,13 +594,15 @@ footer p{
     width: 90%;
     margin-bottom: 0px;
   }
-  /*! Blogs - iPad */
+/*! ----------------------   BLOGS - 768px and below   ---------------------- */
+/*? ----------------------   BLOGS - 768px and below   ---------------------- */
   .blogs-div{
     height: 100vh;
   }
-  
 }
 @media screen and (max-width: 480px){
+/*! ----------------------   NAVBAR - 480px and below   ---------------------- */
+/*? ----------------------   NAVBAR - 480px and below   ---------------------- */
   .navbar{
     display: inline-block;
     position: sticky;
@@ -691,7 +664,8 @@ footer p{
     border-left: 0px;
     border-top: #FDF200 solid 1px;
   }
-  /*! Blogs - mobile */
+/*! ----------------------   BLOGS - 480px and below   ---------------------- */
+/*? ----------------------   BLOGS - 480px and below   ---------------------- */
   .title-div{
     display: none;
   }
@@ -705,7 +679,8 @@ footer p{
     font-size: 1.2rem;
     line-height: 1.7;
   }
-  /*! About - mobile */
+/*! ----------------------   ABOUT - 480px and below   ---------------------- */
+/*? ----------------------   ABOUT - 480px and below   ---------------------- */
   .about-section{
     padding-bottom: 25px;
     width: 100vw;
