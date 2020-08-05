@@ -613,16 +613,16 @@ footer p{
     display: flex;
   }
   .site-links{
-    list-style-type: none;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
   }
   .site-links li{
     margin: 0 auto;
     font-weight: 300;
     display: inline-block;
   }
+  .site-links li a {
+    font-size: 1rem;
+}
   .social-links{
     display: none;
   }
