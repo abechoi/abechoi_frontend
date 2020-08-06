@@ -22,6 +22,7 @@ const App = () => {
           <Route path="/projects" render={() => <Projects/>} />
           
           <Route path={projects[0].url} render={(props) => <ProjectDetails {...props} project={projects[0]} />} />
+          <Route path={projects[1].url} render={(props) => <ProjectDetails {...props} project={projects[1]} />} />
         </Switch>
         <Footer/>
       </Router>

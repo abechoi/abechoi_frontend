@@ -260,8 +260,13 @@ footer p{
   border: 1px solid #ddd;
 }
 .project-demo{
-  height: 100px;
+  max-width: 500px;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
   margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 .table-header{
   margin-top: 50px;;
@@ -302,6 +307,53 @@ footer p{
 }
 .app-logo-last:hover{
  color: #FDF200;
+}
+/*! ----------------------   STAR WARS API   ---------------------- */
+/*? ----------------------   STAR WARS API   ---------------------- */
+.SwapiApp{
+  margin: auto;
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 10px;
+}
+.SwapiApp h1{
+  color: #FDF200;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.SwapiApp button{
+  margin: 0 10px;
+  background: transparent;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.SwapiApp button:hover{
+  color: #fff;
+  border-color: #fff;
+}
+.SwapiApp .card{
+  padding: 8px 25px;
+  background: #1b1b1b;
+  margin: 16px 0;
+  border-radius: 20px;
+  text-align: left;
+}
+.SwapiApp .card p{
+  margin: 6px 0;
+  color: #999;
+}
+.SwapiApp .card h3{
+  margin: 10px 0;
+  color: #FDF200;
+}
+.SwapiApp button:disabled{
+  opacity: 0.2;
+  cursor: not-allowed;
 }
 /*! ----------------------   DOCS - 1250px and up   ---------------------- */
 /*? ----------------------   DOCS - 1250px and up   ---------------------- */
@@ -464,6 +516,11 @@ footer p{
     height: 100%;
     width: 100%;
   }
+/*! ----------------------   PROJECTS - 1024px and below   ---------------------- */
+/*? ----------------------   PROJECTS - 1024px and below   ---------------------- */
+  .projects-grid{
+    grid-template-columns: auto auto;
+  }
 }
 @media screen and (max-width: 768px){
 /*! ----------------------   FOOTER - 768px and below   ---------------------- */
@@ -546,6 +603,9 @@ footer p{
   }
 /*! ----------------------   PROJECTS - 480px and below   ---------------------- */
 /*? ----------------------   PROJECTS - 480px and below   ---------------------- */
+  .projects-grid{
+    grid-template-columns: auto;
+  }
   .project-details{
     text-align: center;
   }
