@@ -128,29 +128,29 @@ ul{
 /*! ----------------------   FOOTER - 1250px and up   ---------------------- */
 /*? ----------------------   FOOTER - 1250px and up   ---------------------- */
 footer{
+  display: block;
   z-index: 1;
   margin: 0 auto;
   padding: 25px;
-  display: block;
   text-align: center;
-  color: white;
   height: 100%;
+  color: white;
 }
 .footer-content{
   display: flex;
 }
 .footer-content-left{
-  width: 50%;
-  margin: 20px 0 40px 0;
   display: flex;
   justify-content: center;
+  margin: 20px 0 40px 0;
+  width: 50%;
   border-right: #FDF200 solid 1px;
 }
 .footer-content-right{
-  width: 50%;
-  margin: 20px 0 40px 0;
   display: flex;
   justify-content: center;
+  margin: 20px 0 40px 0;
+  width: 50%;
   border-left: #FDF200 solid 1px;
 }
 .footer-section{
@@ -179,7 +179,11 @@ footer p{
   color: white;
 }
 .footer-logo{
-  margin: 5px;
+  display: block;
+  margin: 5px auto;
+  width: fit-content;
+  font-size: 1.7rem;
+  font-weight: 800;
 }
 .tech-link{
   padding: 2px;
@@ -247,7 +251,8 @@ footer p{
   margin: 0 0 15px 0;
 }
 /*! ----------------------   APPS - 1250px and up   ---------------------- */
-/*? ----------------------   APPS - 1250px and up   ---------------------- */.project-details{
+/*? ----------------------   APPS - 1250px and up   ---------------------- */
+.project-details{
   width: 900px;
   height: 100%;
   margin: 0 auto;
@@ -303,7 +308,6 @@ footer p{
 .docs-section{
   padding: 100px 0;
 }
-
 /*! ----------------------   ABOUT - 1250px and up   ---------------------- */
 /*? ----------------------   ABOUT - 1250px and up   ---------------------- */
 .about-section{
@@ -387,7 +391,6 @@ footer p{
     width: 70%;
   }
 }
-
 @media screen and (max-width: 1024px){
 /*! ----------------------   NAVBAR - 1024px and below   ---------------------- */
 /*? ----------------------   NAVBAR - 1024px and below   ---------------------- */
@@ -485,6 +488,9 @@ footer p{
   }
 /*! ----------------------   ABOUT - 768px and below   ---------------------- */
 /*? ----------------------   ABOUT - 768px and below   ---------------------- */
+  .table-of-contents{
+    text-align: left;
+  }
   .bio-info p{
     width: 75%;
     font-size: 1.2rem;
