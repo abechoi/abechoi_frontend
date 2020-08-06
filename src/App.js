@@ -16,10 +16,10 @@ const App = () => {
       <Router>
         <Navbar/>
         <Switch>
-          <Route exact path="/" render={() => <About/>} />
+          <Route exact path="/" render={() => <Projects/>} />
           <Route path="/blogs" render={() => <Blogs/>} />
           <Route path="/docs" render={() => <Docs/>} />
-          <Route path="/projects" render={() => <Projects/>} />
+          <Route path="/about" render={() => <About/>} />
           
           <Route path={projects[0].url} render={(props) => <ProjectDetails {...props} project={projects[0]} />} />
           <Route path={projects[1].url} render={(props) => <ProjectDetails {...props} project={projects[1]} />} />
