@@ -368,7 +368,6 @@ footer p{
   margin: 50px auto;
   border-radius: 50%;
   max-width: 60%;
-  max-height: 60%;
   border: 1px solid #ddd;
 }
 .bio-info{
@@ -424,7 +423,6 @@ footer p{
   }
   .bio-pic {
     max-width: 75%;
-    max-height: 75%;
   }
   .bio-info{
     width: 75%;
@@ -467,21 +465,15 @@ footer p{
   }
   .bio-pic{
     max-width: 39%;
-    max-height: 39%;
-    border-radius: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px 0 0 5px;
     margin: 50px 0 0 0;
-    box-shadow: 0 1px rgb(163, 163, 163);
   }
   .bio-info{
     margin: 50px 0 0 0;
     width: 39%;
     padding-top: 50px;
     border: 1px #ddd solid;
-    border-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 0 5px 5px 0;
   }
   .bio-info p{
     font-size: 1.5rem;
@@ -572,6 +564,10 @@ footer p{
   }
   .bio-pic{
     max-width: 80%;
+<<<<<<< HEAD
+=======
+    border-radius: 5px;
+>>>>>>> test
     margin: 50px auto;
   }
   .bio-info{
@@ -602,7 +598,7 @@ footer p{
     margin: 0;
     padding: 15px;
   }
-  .app-nav-logo{
+  .AbeChoiApp{
     font-size: 4rem;
     font-weight: 800;
   }
