@@ -13,8 +13,8 @@ const Footer = () => {
             <h2 className="footer-name" style={{ color: '#00FECA' }}>SECTION</h2>
             <ul className="footer-links">
               <li className="footer-link"><Link to="/">Projects</Link></li>
-              <li className="footer-link"><Link to="/blogs">Blogs</Link></li>
               <li className="footer-link"><Link to="/docs">Docs</Link></li>
+              <li className="footer-link"><Link to="/blogs">Blogs</Link></li>
               <li className="footer-link"><Link to="/about">About</Link></li>
             </ul>
           </div>

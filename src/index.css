@@ -46,7 +46,7 @@ ul{
 }
 .nav-logo{
   text-align: center;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   width: fit-content;
   margin: 10px auto 0 auto;
   font-size: 1.7rem;
@@ -288,6 +288,8 @@ footer p{
   margin: 25px auto;
   padding: 25px;
 }
+/*! ----------------------   AbeChoiApp   ---------------------- */
+/*? ----------------------   AbeChoiApp   ---------------------- */
 .app-nav-logo{
   display: flex;
   justify-content: center;
@@ -308,8 +310,8 @@ footer p{
 .app-logo-last:hover{
  color: #FDF200;
 }
-/*! ----------------------   STAR WARS API   ---------------------- */
-/*? ----------------------   STAR WARS API   ---------------------- */
+/*! ----------------------   SWAPI   ---------------------- */
+/*? ----------------------   SWAPI   ---------------------- */
 .SwapiApp{
   margin: auto;
   background: #222;

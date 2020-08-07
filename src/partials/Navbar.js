@@ -24,10 +24,10 @@ const Navbar = () => {
         </a>
       </div>
       <ul className="site-links">
-        <li><NavLink to="/projects" className="project-link">PROJECTS</NavLink></li>
+        <li><NavLink exact to="/" className="project-link">PROJECTS</NavLink></li>
         <li><NavLink to="/docs" className="docs-link">DOCS</NavLink></li>
         <li><NavLink to="/blogs" className="blogs-link">BLOGS</NavLink></li>
-        <li><NavLink exact to="/" className="about-link">ABOUT</NavLink></li>
+        <li><NavLink to="/about" className="about-link">ABOUT</NavLink></li>
       </ul>
       <ul className="social-links">
         { links.map(link => {
