@@ -5,7 +5,7 @@ const Blogs = () => {
 
 
   return blogs.length ? (
-    <section className="blogs-section">
+    <section>
       <div className="blogs-div">
         <ul>
           { blogs.map( blog => {

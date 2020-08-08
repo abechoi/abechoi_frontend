@@ -463,9 +463,6 @@ footer p{
 @media screen and (max-width: 1250px){
 /*! ----------------------   BLOGS - 1250px and below   ---------------------- */
 /*? ----------------------   BLOGS - 1250px and below   ---------------------- */
-  .blogs-div{
-    padding: 50px;
-  }
   .bio-pic {
     max-width: 75%;
   }
@@ -644,7 +641,7 @@ footer p{
     padding: 15px;
   }
   .AbeChoiApp{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
   }
   .TodoApp .text, .TodoApp .todo{
