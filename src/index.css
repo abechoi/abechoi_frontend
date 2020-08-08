@@ -357,10 +357,10 @@ footer p{
 .TodoApp form{
   display: flex;
   margin: 10px auto;
-  width: fit-content;
+  width: 395px;
 }
 .TodoApp .text{
-  width: 80%;
+  width: 325px;
   height: 55px;
   text-align: center;
   font-size: 26px;
@@ -371,14 +371,9 @@ footer p{
   background: #ddd;
 }
 .TodoApp .button{
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   line-height: 1;
-  width: 20%;
+  width: 70px;
   height: 61px;
   font-size: 45px;
   font-weight: 800;
@@ -653,7 +648,20 @@ footer p{
     font-size: 3.5rem;
     font-weight: 800;
   }
+  .TodoApp form{
+    max-width: 270px;
+    margin: 0 auto;
+  }
   .TodoApp .text{
-    width: 285px;
+    padding: 0;
+    width: 220px;
+    height: 39px;
+  }
+  .TodoApp .todo{
+    width: 270px;
+    height: 42px;
+  }
+  .TodoApp .button{
+    height: 45px;
   }
 }
