@@ -46,9 +46,8 @@ ul{
 }
 .nav-logo{
   text-align: center;
-  padding-top: 1rem;
   width: fit-content;
-  margin: 10px auto 0 auto;
+  margin: auto;
   font-size: 1.7rem;
   font-weight: 800;
 }
@@ -486,6 +485,12 @@ footer p{
     height: 100%;
     text-align: center;
   }
+  .nav-logo{
+    margin: 25px auto 0 auto;
+  }
+  .nav-logo a{
+    display: flex;
+  }
   .site-links{
     display: block;
     width: 100%;
@@ -584,11 +589,7 @@ footer p{
 /*! ----------------------   NAVBAR - 480px and below   ---------------------- */
 /*? ----------------------   NAVBAR - 480px and below   ---------------------- */
   .nav-logo{
-    padding: 0;
-    margin: 15px auto 0 auto;
-  }
-  .nav-logo a{
-    display: flex;
+    margin-top: 15px;
   }
   .site-links{
     display: flex;
@@ -648,8 +649,5 @@ footer p{
   .AbeChoiApp{
     font-size: 3.5rem;
     font-weight: 800;
-  }
-  .TodoApp .button{
-    width: 10px;
   }
 }
