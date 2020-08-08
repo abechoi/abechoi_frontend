@@ -351,7 +351,7 @@ footer p{
   height: 500px;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
   background: #20232A;
   color: white;
 }
@@ -381,10 +381,9 @@ footer p{
   color: #00FECA;
 }
 .TodoApp .todo{
-  width: 375px;
+  width: 395px;
   height: 50px;
   font-size: 34px;
-  padding: 2px 10px;
   border-radius: 5px;
   margin: 0 auto;
   color: #00FECA;
@@ -630,7 +629,9 @@ footer p{
   }
   .project-details{
     text-align: center;
-    padding: 0;
+  }
+  .project-demo{
+    max-width: 300px;
   }
   .project-div{
     justify-content: center;
@@ -645,5 +646,8 @@ footer p{
   .AbeChoiApp{
     font-size: 4rem;
     font-weight: 800;
+  }
+  .TodoApp .text, .TodoApp .todo{
+    width: 100%;
   }
 }
