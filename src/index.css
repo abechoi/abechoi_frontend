@@ -360,7 +360,7 @@ footer p{
   width: 395px;
 }
 .TodoApp .text{
-  width: 325px;
+  width: 280px;
   height: 55px;
   text-align: center;
   font-size: 26px;
@@ -550,9 +550,6 @@ footer p{
 /*? ----------------------   PROJECTS - 1024px and below   ---------------------- */
   .projects-grid{
     grid-template-columns: auto auto;
-  }
-  .TodoApp .text{
-    width: 285px;
   }
 }
 @media screen and (max-width: 768px){
