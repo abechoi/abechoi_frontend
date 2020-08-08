@@ -551,6 +551,9 @@ footer p{
   .projects-grid{
     grid-template-columns: auto auto;
   }
+  .TodoApp .text{
+    width: 285px;
+  }
 }
 @media screen and (max-width: 768px){
 /*! ----------------------   FOOTER - 768px and below   ---------------------- */
@@ -580,7 +583,7 @@ footer p{
   }
   .bio-info p{
     width: 75%;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 480px){

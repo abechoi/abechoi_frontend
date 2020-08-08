@@ -9,7 +9,7 @@ const About = () => {
         alt="https://avatars1.githubusercontent.com/u/7634806?s=460&u=6f6f5b9b3070017d34185e9cdf32489498f15d17&v=4"/>
         <div className="bio-info">
           <p>Abraham Jong-Hae Choi</p>
-          <p>Male | 33</p>
+          <p>Abraham.Choi@icloud.com</p>
           <p>Chapman University</p>
           <p>Computer Science B.S</p>
           <p>Web Developer</p>
