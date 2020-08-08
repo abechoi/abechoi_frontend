@@ -379,7 +379,10 @@ footer p{
   border-radius: 0 5px 5px 0;
   background: #7B61F8;
   color: #00FECA;
-  line-height: 0;
+  line-height: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .TodoApp .todo{
   width: 395px;
