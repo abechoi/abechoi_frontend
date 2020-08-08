@@ -662,6 +662,7 @@ footer p{
     height: 42px;
   }
   .TodoApp .button{
+    width: 50px;
     height: 45px;
   }
 }
