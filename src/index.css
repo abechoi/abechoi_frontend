@@ -374,6 +374,9 @@ footer p{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   line-height: 1;
   width: 20%;
   height: 61px;
