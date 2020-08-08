@@ -654,7 +654,7 @@ footer p{
     font-weight: 800;
   }
   .TodoApp .button{
-    min-width: 10px;
-    max-width: 10px;
+    min-width: 10px !important;
+    max-width: 10px !important;
   }
 }
