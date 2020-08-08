@@ -16,6 +16,7 @@ const App = () => {
       <Router>
         <Navbar/>
         <Switch>
+        
           <Route exact path="/" render={() => <Projects/>} />
           <Route path="/blogs" render={() => <Blogs/>} />
           <Route path="/docs" render={() => <Docs/>} />
@@ -23,6 +24,8 @@ const App = () => {
           
           <Route path={projects[0].url} render={(props) => <ProjectDetails {...props} project={projects[0]} />} />
           <Route path={projects[1].url} render={(props) => <ProjectDetails {...props} project={projects[1]} />} />
+          <Route path={projects[2].url} render={(props) => <ProjectDetails {...props} project={projects[2]} />} />
+
         </Switch>
         <Footer/>
       </Router>

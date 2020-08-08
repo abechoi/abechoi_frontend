@@ -298,8 +298,8 @@ footer p{
   font-size: 5rem;
   font-weight: 800;
 }
-/*! ----------------------   SWAPI   ---------------------- */
-/*? ----------------------   SWAPI   ---------------------- */
+/*! ----------------------   SwapiApp   ---------------------- */
+/*? ----------------------   SwapiApp   ---------------------- */
 .SwapiApp{
   margin: auto;
   background: #222;
@@ -344,6 +344,51 @@ footer p{
 .SwapiApp button:disabled{
   opacity: 0.2;
   cursor: not-allowed;
+}
+/*! ----------------------   TodoApp   ---------------------- */
+/*? ----------------------   TodoApp   ---------------------- */
+.TodoApp{
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 10px;
+  background: #20232A;
+  color: white;
+}
+.TodoApp form{
+  display: flex;
+  margin: 10px auto;
+  width: fit-content;
+}
+.TodoApp .text{
+  width: 280px;
+  height: 55px;
+  font-size: 26px;
+  padding: 0 20px;
+  outline: none;
+  border: 3px solid #7B61F8;
+  border-radius: 5px 0 0 5px;
+  background: #ddd;
+}
+.TodoApp .button{
+  width: 70px;
+  height: 61px;
+  font-size: 50px;
+  font-weight: 800;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: #7B61F8;
+  color: #00FECA;
+}
+.TodoApp .todo{
+  width: 395px;
+  height: 50px;
+  font-size: 34px;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #00FECA;
+  background: #7B61F8;
+  font-weight: 600;
 }
 /*! ----------------------   DOCS - 1250px and up   ---------------------- */
 /*? ----------------------   DOCS - 1250px and up   ---------------------- */
@@ -585,6 +630,9 @@ footer p{
   .project-details{
     text-align: center;
   }
+  .project-demo{
+    max-width: 300px;
+  }
   .project-div{
     justify-content: center;
   }
@@ -598,5 +646,8 @@ footer p{
   .AbeChoiApp{
     font-size: 4rem;
     font-weight: 800;
+  }
+  .TodoApp .text, .TodoApp .todo{
+    width: 100%;
   }
 }
