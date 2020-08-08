@@ -361,7 +361,7 @@ footer p{
   width: fit-content;
 }
 .TodoApp .text{
-  width: 280px;
+  width: 80%;
   height: 55px;
   text-align: center;
   font-size: 26px;
@@ -376,7 +376,7 @@ footer p{
   -moz-appearance: none;
   appearance: none;
   line-height: 1;
-  width: 70px;
+  width: 20%;
   height: 61px;
   font-size: 45px;
   font-weight: 800;
@@ -648,8 +648,5 @@ footer p{
   .AbeChoiApp{
     font-size: 3.5rem;
     font-weight: 800;
-  }
-  .TodoApp .text, .TodoApp .todo{
-    width: 100%;
   }
 }
