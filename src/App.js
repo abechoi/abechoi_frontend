@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Navbar from './partials/Navbar';
 import Footer from './partials/Footer';
 import Blogs from './components/Blogs';
@@ -17,15 +17,18 @@ const App = () => {
         <Navbar/>
         <Switch>
         
-          <Route exact path="/" render={() => <Projects/>} />
+          <Route exact path="/">
+            <Redirect to="/projects"/>
+          </Route>
+          <Route path="/projects" render={() => <Projects/>} />
           <Route path="/blogs" render={() => <Blogs/>} />
           <Route path="/docs" render={() => <Docs/>} />
           <Route path="/about" render={() => <About/>} />
-          
-          <Route path={projects[0].url} render={(props) => <ProjectDetails {...props} project={projects[0]} />} />
-          <Route path={projects[1].url} render={(props) => <ProjectDetails {...props} project={projects[1]} />} />
-          <Route path={projects[2].url} render={(props) => <ProjectDetails {...props} project={projects[2]} />} />
 
+          {projects.map(project => (
+            <Route path={project.url} render={(props) => <ProjectDetails {...props} project={project} />} />
+          ))}
+          
         </Switch>
         <Footer/>
       </Router>
